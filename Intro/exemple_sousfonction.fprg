@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="h.decock"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-04-11 09:51:49 "/>
+        <attribute name="created" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTA0LTExOyIwOTozNzo0OCAiOzIzOTY="/>
+        <attribute name="edited" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTA0LTExOyIwOTo1MTo0OSAiOzE7MjUwMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="return" type="String" array="False" size=""/>
+            <assign variable="return" expression="Concat(&quot;Hello&quot;, &quot;World&quot;)"/>
+            <output expression="return" newline="True"/>
+        </body>
+    </function>
+    <function name="Concat" type="String" variable="result">
+        <parameters>
+            <parameter name="x" type="String" array="False"/>
+            <parameter name="y" type="String" array="False"/>
+        </parameters>
+        <body>
+            <declare name="result" type="String" array="False" size=""/>
+            <assign variable="result" expression="x &amp; &quot; &quot; &amp; y"/>
+        </body>
+    </function>
+</flowgorithm>

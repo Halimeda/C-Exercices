@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="h.decock"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-25 04:36:58 "/>
+        <attribute name="created" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTI1OyIxMToyOToyMyAiOzIzODc="/>
+        <attribute name="edited" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTI1OyIwNDozNjo1OCAiOzI7MjUwNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nb1, nb2" type="Integer" array="False" size=""/>
+            <assign variable="nb1" expression="0"/>
+            <assign variable="nb2" expression="1"/>
+            <while expression="nb2 &lt; 10">
+                <assign variable="nb1" expression="nb1 + 1"/>
+                <output expression="nb1 &amp; &quot; * &quot; &amp; nb2 &amp; &quot; = &quot; &amp; nb1 * nb2" newline="True"/>
+                <while expression="nb1 &gt; 9">
+                    <assign variable="nb1" expression="0"/>
+                    <assign variable="nb2" expression="nb2 + 1"/>
+                </while>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="profgame"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-25 09:47:30 "/>
+        <attribute name="created" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wMy0yNTsiMDg6NTk6NTggIjsyNjY1"/>
+        <attribute name="edited" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wMy0yNTsiMDk6NDc6MzAgIjsxOzI3NjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Nb1, Nb2" type="Integer" array="False" size=""/>
+            <declare name="Operator" type="String" array="False" size=""/>
+            <output expression="&quot;Entrez Nb1:&quot;" newline="True"/>
+            <input variable="Nb1"/>
+            <output expression="&quot;Entrez Operator&quot;" newline="True"/>
+            <input variable="Operator"/>
+            <output expression="&quot;Entrez Nb2&quot;" newline="True"/>
+            <input variable="Nb2"/>
+            <if expression="Operator == &quot;+&quot;">
+                <then>
+                    <output expression="Nb1 + Nb2" newline="True"/>
+                </then>
+                <else>
+                    <if expression="Operator == &quot;-&quot;">
+                        <then>
+                            <output expression="Nb1 - Nb2" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="Operator == &quot;x&quot;">
+                                <then>
+                                    <output expression="Nb1 * Nb2" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="Operator == &quot;/&quot;">
+                                        <then>
+                                            <if expression="Nb2 == 0">
+                                                <then>
+                                                    <output expression="&quot;Pas de division par 0&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="Nb1 / Nb2" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Operation impossible&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

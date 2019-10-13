@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="profgame"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-18 02:31:17 "/>
+        <attribute name="created" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wMy0xODsiMDI6MjY6MTAgIjsyNjQz"/>
+        <attribute name="edited" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wMy0xODsiMDI6MzE6MTcgIjsxOzI3NTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Annee" type="Integer" array="False" size=""/>
+            <output expression="&quot;Entrez une ann&#233;e:&quot;" newline="True"/>
+            <input variable="Annee"/>
+            <if expression="((Annee % 4 == 0)&amp;&amp;(Annee % 100 != 0)) || (Annee % 400 == 0)">
+                <then>
+                    <output expression="&quot;Ann&#233;e bissextile&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Ann&#233;e non bissextile&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

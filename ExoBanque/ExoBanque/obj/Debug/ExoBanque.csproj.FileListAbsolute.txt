@@ -1,0 +1,14 @@
+C:\Users\profgame\source\repos\ExoBanque\ExoBanque\bin\Debug\ExoBanque.exe.config
+C:\Users\profgame\source\repos\ExoBanque\ExoBanque\bin\Debug\ExoBanque.exe
+C:\Users\profgame\source\repos\ExoBanque\ExoBanque\bin\Debug\ExoBanque.pdb
+C:\Users\profgame\source\repos\ExoBanque\ExoBanque\obj\Debug\ExoBanque.csprojAssemblyReference.cache
+C:\Users\profgame\source\repos\ExoBanque\ExoBanque\obj\Debug\ExoBanque.csproj.CoreCompileInputs.cache
+C:\Users\profgame\source\repos\ExoBanque\ExoBanque\obj\Debug\ExoBanque.exe
+C:\Users\profgame\source\repos\ExoBanque\ExoBanque\obj\Debug\ExoBanque.pdb
+C:\Users\h.decock\Desktop\ExoBanque\ExoBanque\bin\Debug\ExoBanque.exe.config
+C:\Users\h.decock\Desktop\ExoBanque\ExoBanque\bin\Debug\ExoBanque.exe
+C:\Users\h.decock\Desktop\ExoBanque\ExoBanque\bin\Debug\ExoBanque.pdb
+C:\Users\h.decock\Desktop\ExoBanque\ExoBanque\obj\Debug\ExoBanque.csprojAssemblyReference.cache
+C:\Users\h.decock\Desktop\ExoBanque\ExoBanque\obj\Debug\ExoBanque.csproj.CoreCompileInputs.cache
+C:\Users\h.decock\Desktop\ExoBanque\ExoBanque\obj\Debug\ExoBanque.exe
+C:\Users\h.decock\Desktop\ExoBanque\ExoBanque\obj\Debug\ExoBanque.pdb

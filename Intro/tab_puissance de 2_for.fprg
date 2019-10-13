@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="h.decock"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-04-10 12:06:16 "/>
+        <attribute name="created" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTA0LTEwOyIxMTo1ODo0NSAiOzIzODg="/>
+        <attribute name="edited" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTA0LTEwOyIxMjowNjoxNiAiOzE7MjQ4OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, SIZE" type="Integer" array="False" size=""/>
+            <assign variable="SIZE" expression="10"/>
+            <declare name="tab" type="Integer" array="True" size="SIZE"/>
+            <assign variable="i" expression="0"/>
+            <assign variable="tab[i]" expression="2"/>
+            <for variable="i" start="1" end="SIZE - 1" direction="inc" step="1">
+                <assign variable="tab[i]" expression="tab[i-1] * 2"/>
+            </for>
+            <for variable="i" start="0" end="SIZE - 1" direction="inc" step="1">
+                <output expression="tab[i] &amp; &quot; &quot;" newline="False"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

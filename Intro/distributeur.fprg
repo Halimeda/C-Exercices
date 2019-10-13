@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="h.decock"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-25 04:41:35 "/>
+        <attribute name="created" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTI1OyIwMTo0NTo0OSAiOzIzOTI="/>
+        <attribute name="edited" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTI1OyIwMTo0NjowOCAiOzE7aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTE4OyIwMjoxMzoxMyAiO0JvaXNzb25zLmZwcmc7NjMyMA=="/>
+        <attribute name="edited" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTI1OyIwNDo0MTozNSAiOzEyOzI1NDQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="BoisA, BoisB, BoisC, BoisD, Choice" type="Integer" array="False" size=""/>
+            <declare name="soif" type="Boolean" array="False" size=""/>
+            <assign variable="Choice" expression="0"/>
+            <assign variable="BoisA" expression="2"/>
+            <assign variable="BoisB" expression="1"/>
+            <assign variable="BoisC" expression="1"/>
+            <do expression="(BoisA &gt; 0 || BoisB &gt; 0 || BoisC &gt; 0) &amp;&amp; soif == True">
+                <while expression="Choice &gt; 3 || Choice &lt; 1">
+                    <output expression="&quot;Choisissez une boisson : &quot;" newline="True"/>
+                    <input variable="Choice"/>
+                    <if expression="Choice &lt;= 3 &amp;&amp; Choice &gt;= 1">
+                        <then/>
+                        <else>
+                            <output expression="&quot;Choisissez un chiffre entre 1 et 3&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </while>
+                <if expression="Choice == 1">
+                    <then>
+                        <if expression="BoisA &gt; 0">
+                            <then>
+                                <output expression="&quot;Boisson&quot;" newline="True"/>
+                                <assign variable="BoisA" expression="BoisA - 1"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Il n'y a plus de boisson 1, choisissez autre chose &quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <if expression="Choice == 2">
+                            <then>
+                                <if expression="BoisB &gt; 0">
+                                    <then>
+                                        <output expression="&quot;Boisson&quot;" newline="True"/>
+                                        <assign variable="BoisB" expression="BoisB - 1"/>
+                                    </then>
+                                    <else>
+                                        <output expression="&quot;Il n'y a plus de boisson 2, choisissez autre chose &quot;" newline="True"/>
+                                    </else>
+                                </if>
+                            </then>
+                            <else>
+                                <if expression="Choice == 3">
+                                    <then>
+                                        <if expression="BoisC &gt; 0">
+                                            <then>
+                                                <output expression="&quot;Boisson&quot;" newline="True"/>
+                                                <assign variable="BoisC" expression="BoisC - 1"/>
+                                            </then>
+                                            <else>
+                                                <output expression="&quot;Il n'y a plus de boisson 3, choisissez autre chose &quot;" newline="True"/>
+                                            </else>
+                                        </if>
+                                    </then>
+                                    <else/>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <if expression="(BoisA &gt; 0 || BoisB &gt; 0 || BoisC &gt; 0)">
+                    <then>
+                        <output expression="&quot;Voulez-vous encore &#224; boire ? (False/True)&quot;" newline="True"/>
+                        <input variable="soif"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;D&#233;sol&#233;. Il n'y a plus de boisson...&quot;" newline="True"/>
+                    </else>
+                </if>
+            </do>
+            <output expression="&quot;Bonne journ&#233;e&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

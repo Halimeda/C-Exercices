@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="profgame"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-26 04:14:15 "/>
+        <attribute name="created" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wMy0yNjsiMDQ6MDY6NTEgIjsyNjQ3"/>
+        <attribute name="edited" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wMy0yNjsiMDQ6MTQ6MTUgIjszOzI3NTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Saisie, Min, Cpt" type="Integer" array="False" size=""/>
+            <assign variable="Cpt" expression="0"/>
+            <assign variable="Min" expression="0"/>
+            <do expression="Cpt &lt; 5">
+                <output expression="&quot;Entrez le nombre &quot; &amp; Cpt + 1" newline="True"/>
+                <input variable="Saisie"/>
+                <if expression="Saisie &lt; Min || Cpt == 0">
+                    <then>
+                        <assign variable="Min" expression="Saisie"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="Cpt" expression="Cpt + 1"/>
+            </do>
+            <output expression="&quot;Le minimum est: &quot; &amp; Min" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

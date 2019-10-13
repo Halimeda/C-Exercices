@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Forma700"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-04-06 03:06:18 "/>
+        <attribute name="created" value="Rm9ybWE3MDA7REVTS1RPUC1LUlE0RU1GOzIwMTgtMDQtMDY7IjEyOjM5OjU1ICI7Mjk0Mg=="/>
+        <attribute name="edited" value="Rm9ybWE3MDA7REVTS1RPUC1LUlE0RU1GOzIwMTgtMDQtMDY7IjAzOjA2OjE4ICI7MTszMDQz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="TAILLE, i, j, temp" type="Integer" array="False" size=""/>
+            <assign variable="TAILLE" expression="5"/>
+            <declare name="Tab" type="Integer" array="True" size="TAILLE"/>
+            <for variable="i" start="0" end="TAILLE - 1" direction="inc" step="1">
+                <assign variable="Tab[i]" expression="Random(101)"/>
+                <output expression="Tab[i] &amp; &quot; | &quot;" newline="False"/>
+            </for>
+            <output expression="&quot;&quot;" newline="True"/>
+            <for variable="i" start="0" end="TAILLE - 2" direction="inc" step="1">
+                <for variable="j" start="i + 1" end="TAILLE - 1" direction="inc" step="1">
+                    <if expression="Tab[i] &gt; Tab[j]">
+                        <then>
+                            <assign variable="temp" expression="Tab[i]"/>
+                            <assign variable="Tab[i]" expression="Tab[j]"/>
+                            <assign variable="Tab[j]" expression="temp"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <for variable="i" start="0" end="TAILLE - 1" direction="inc" step="1">
+                <output expression="Tab[i] &amp; &quot; | &quot;" newline="False"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

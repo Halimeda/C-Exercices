@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="h.decock"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-18 02:02:18 "/>
+        <attribute name="created" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTE4OyIwMTo0ODo1NiAiOzIzOTU="/>
+        <attribute name="edited" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTE4OyIwMjowMjoxOCAiOzE7MjQ5Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Year" type="Integer" array="False" size=""/>
+            <output expression="&quot;Proposez une ann&#233;e&quot;" newline="True"/>
+            <input variable="Year"/>
+            <if expression="(((Year%4 == 0) &amp;&amp; (Year%100 != 0)) || (Year%400 == 0))">
+                <then>
+                    <output expression="&quot;C'est une ann&#233;e bissextile&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Ce n'est pas une ann&#233;e bissextile&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

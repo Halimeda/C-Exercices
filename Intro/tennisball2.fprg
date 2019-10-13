@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="h.decock"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-25 02:23:18 "/>
+        <attribute name="created" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTI1OyIxMTozNjoyOCAiOzIzOTA="/>
+        <attribute name="edited" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTI1OyIxMTozODowNCAiOzI7aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTE4OyIwMjowMjoyMSAiO1Rlbm5pc0JhbGwuZnByZzs2NDcy"/>
+        <attribute name="edited" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTI1OyIwMjoyMzoxOCAiOzI7MjQ5NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Pret" type="Boolean" array="False" size=""/>
+            <declare name="panier" type="Integer" array="False" size=""/>
+            <output expression="&quot;Combien de balles dans le panier ?&quot;" newline="True"/>
+            <input variable="panier"/>
+            <while expression="panier &gt; 0">
+                <output expression="&quot;&#202;tes-vous pr&#234;ts ? (True/False)&quot;" newline="True"/>
+                <input variable="Pret"/>
+                <if expression="Pret == True">
+                    <then>
+                        <output expression="&quot;Lancer Balle&quot;" newline="True"/>
+                        <assign variable="panier" expression="panier - 1"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;La balle n'est pas lanc&#233;e car le joueur n'est pas pr&#234;t&quot;" newline="True"/>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;Le panier est vide&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

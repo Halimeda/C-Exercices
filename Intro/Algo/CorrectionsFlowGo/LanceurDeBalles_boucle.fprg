@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="profgame"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-25 03:05:51 "/>
+        <attribute name="created" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wMy0yNTsiMDI6MTM6MDEgIjsyNjM3"/>
+        <attribute name="edited" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wMy0yNTsiMDM6MDU6NTEgIjszOzI3NTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Pret" type="Boolean" array="False" size=""/>
+            <declare name="Stock" type="Integer" array="False" size=""/>
+            <output expression="&quot;Combien de balles?&quot;" newline="True"/>
+            <input variable="Stock"/>
+            <while expression="Stock &gt; 0">
+                <output expression="&quot;Etes-vous pr&#234;t?&quot;" newline="True"/>
+                <input variable="Pret"/>
+                <if expression="Pret">
+                    <then>
+                        <output expression="&quot;Lance balle&quot;" newline="True"/>
+                        <assign variable="Stock" expression="Stock - 1"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Joueur pas pr&#234;t&quot;" newline="True"/>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;Plus de balles&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

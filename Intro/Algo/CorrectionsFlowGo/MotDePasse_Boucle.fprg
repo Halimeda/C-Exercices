@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="profgame"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-26 11:12:41 "/>
+        <attribute name="created" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wMy0yNjsiMTA6Mzc6NTMgIjsyNjUw"/>
+        <attribute name="edited" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wMy0yNjsiMTE6MTI6NDEgIjsyOzI3NTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Essais" type="Integer" array="False" size=""/>
+            <declare name="MotDePasse, Saisie" type="String" array="False" size=""/>
+            <declare name="PasswordCorrect" type="Boolean" array="False" size=""/>
+            <assign variable="Essais" expression="3"/>
+            <assign variable="PasswordCorrect" expression="false"/>
+            <assign variable="MotDePasse" expression="&quot;S3cr3t&quot;"/>
+            <do expression="!PasswordCorrect &amp;&amp; Essais &gt; 0">
+                <output expression="&quot;Entrez votre mot de passe&quot;" newline="True"/>
+                <input variable="Saisie"/>
+                <if expression="Saisie != MotDePasse">
+                    <then>
+                        <assign variable="Essais" expression="Essais - 1"/>
+                        <output expression="&quot;Mot de passe incorrect!&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Bienvenue&quot;" newline="True"/>
+                        <assign variable="PasswordCorrect" expression="true"/>
+                    </else>
+                </if>
+            </do>
+            <if expression="!PasswordCorrect">
+                <then>
+                    <output expression="&quot;Compte Bloqu&#233;&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

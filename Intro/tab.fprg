@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="h.decock"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-26 04:43:23 "/>
+        <attribute name="created" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTI2OyIwNDozNTozNCAiOzIzODk="/>
+        <attribute name="edited" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTI2OyIwNDo0MzoyMyAiOzE7MjQ5NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, TAILLE" type="Integer" array="False" size=""/>
+            <assign variable="TAILLE" expression="5"/>
+            <declare name="tab" type="Integer" array="True" size="TAILLE"/>
+            <assign variable="i" expression="0"/>
+            <while expression="i &lt; 5">
+                <assign variable="tab[i]" expression="i + 1"/>
+                <output expression="tab[i] &amp; &quot; &quot;" newline="False"/>
+                <assign variable="i" expression="i +1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

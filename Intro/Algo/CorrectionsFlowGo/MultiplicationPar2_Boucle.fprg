@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="profgame"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-25 12:10:49 "/>
+        <attribute name="created" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wMy0yNTsiMTI6MDU6NTAgIjsyNjQz"/>
+        <attribute name="edited" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wMy0yNTsiMTI6MTA6NDkgIjsxOzI3NTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Multiplicateur, Reponse" type="Integer" array="False" size=""/>
+            <assign variable="Multiplicateur" expression="1"/>
+            <while expression="Multiplicateur &lt;= 10">
+                <assign variable="Reponse" expression="Multiplicateur * 2"/>
+                <output expression="&quot;2 x &quot; &amp; Multiplicateur &amp; &quot; = &quot; &amp; Reponse" newline="True"/>
+                <assign variable="Multiplicateur" expression="Multiplicateur + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

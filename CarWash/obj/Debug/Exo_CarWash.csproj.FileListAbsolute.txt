@@ -1,0 +1,7 @@
+C:\Users\h.decock\OneDrive - Interface3\C#\CSharpOO\CSharp_orienteObjet_Exo\CarWash\obj\Debug\Exo_CarWash.csproj.CoreCompileInputs.cache
+C:\Users\h.decock\OneDrive - Interface3\C#\CSharpOO\CSharp_orienteObjet_Exo\CarWash\bin\Debug\CarWash.exe.config
+C:\Users\h.decock\OneDrive - Interface3\C#\CSharpOO\CSharp_orienteObjet_Exo\CarWash\bin\Debug\CarWash.exe
+C:\Users\h.decock\OneDrive - Interface3\C#\CSharpOO\CSharp_orienteObjet_Exo\CarWash\bin\Debug\CarWash.pdb
+C:\Users\h.decock\OneDrive - Interface3\C#\CSharpOO\CSharp_orienteObjet_Exo\CarWash\obj\Debug\CarWash.exe
+C:\Users\h.decock\OneDrive - Interface3\C#\CSharpOO\CSharp_orienteObjet_Exo\CarWash\obj\Debug\CarWash.pdb
+C:\Users\h.decock\OneDrive - Interface3\C#\CSharpOO\CSharp_orienteObjet_Exo\CarWash\obj\Debug\Exo_CarWash.csprojAssemblyReference.cache

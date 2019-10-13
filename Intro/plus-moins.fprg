@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="h.decock"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-26 04:35:12 "/>
+        <attribute name="created" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTI2OyIxMTo0NjozNCAiOzIzODk="/>
+        <attribute name="edited" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTI2OyIwNDozNToxMiAiOzE7MjQ5Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="computer, player, count" type="Integer" array="False" size=""/>
+            <assign variable="computer" expression="random(101)"/>
+            <assign variable="count" expression="0"/>
+            <do expression="player != computer">
+                <output expression="&quot;Proposez un chiffre compris entre 1 et 100&quot;" newline="True"/>
+                <input variable="player"/>
+                <assign variable="count" expression="count + 1"/>
+                <if expression="player != computer">
+                    <then>
+                        <if expression="player &lt; computer">
+                            <then>
+                                <output expression="&quot;C'est plus&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;C'est moins&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+            </do>
+            <output expression="&quot;C'est gagn&#233; ! tu as essay&#233; &quot; &amp; count &amp; &quot; de fois&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

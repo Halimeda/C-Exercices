@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="h.decock"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-26 04:35:33 "/>
+        <attribute name="created" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTI2OyIxMDozNzoyNyAiOzIzOTA="/>
+        <attribute name="edited" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTI2OyIwNDozNTozMyAiOzI7MjQ5Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="toprint" type="String" array="False" size=""/>
+            <declare name="giveNb, i, j" type="Integer" array="False" size=""/>
+            <assign variable="toprint" expression="&quot;*&quot;"/>
+            <assign variable="i" expression="0"/>
+            <assign variable="j" expression="1"/>
+            <output expression="&quot;Choisissez un nombre : &quot;" newline="True"/>
+            <input variable="giveNb"/>
+            <while expression="j &lt;= giveNb">
+                <while expression="i &lt; j">
+                    <output expression="toprint" newline="False"/>
+                    <assign variable="i" expression="i +1"/>
+                </while>
+                <output expression="&quot;&quot;" newline="True"/>
+                <assign variable="i" expression="0"/>
+                <assign variable="j" expression="j +1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

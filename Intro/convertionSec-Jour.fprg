@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="h.decock"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-18 11:34:03 "/>
+        <attribute name="created" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTE4OyIxMDo0NjoxNCAiOzIzODc="/>
+        <attribute name="edited" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTE4OyIxMTozNDowMyAiOzE7MjQ5MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="jour, heure, minute, sec" type="Integer" array="False" size=""/>
+            <output expression="&quot;Entrez un nombre de secondes : &quot;" newline="True"/>
+            <input variable="sec"/>
+            <assign variable="jour" expression="sec / 86400"/>
+            <assign variable="sec" expression="sec % 86400"/>
+            <assign variable="heure" expression="sec / 3600"/>
+            <assign variable="sec" expression="sec % 3600"/>
+            <assign variable="minute" expression="sec / 60"/>
+            <assign variable="sec" expression="sec % 60"/>
+            <output expression="&quot;Cale correspond &#224; : &quot; &amp; jour &amp; &quot; jours &quot; &amp; heure &amp; &quot; heures &quot; &amp; minute &amp; &quot; minutes &quot; &amp; sec &amp; &quot; secondes&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

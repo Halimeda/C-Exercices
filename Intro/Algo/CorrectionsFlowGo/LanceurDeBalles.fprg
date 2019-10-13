@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="profgame"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-18 03:47:20 "/>
+        <attribute name="created" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wMy0xODsiMDM6MzY6MzUgIjsyNjUy"/>
+        <attribute name="edited" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wMy0xODsiMDM6NDc6MjAgIjsxOzI3NTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="EstPret, PanierEstPlein" type="Boolean" array="False" size=""/>
+            <assign variable="EstPret" expression="false"/>
+            <assign variable="PanierEstPlein" expression="false"/>
+            <if expression="EstPret &amp;&amp; PanierEstPlein">
+                <then>
+                    <output expression="&quot;Lancez la balle&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="!EstPret">
+                        <then>
+                            <if expression="!PanierEstPlein">
+                                <then>
+                                    <output expression="&quot;Pas pr&#234;t et panier vide&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Pas Pr&#234;t&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;Panier est vide&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="h.decock"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-26 04:34:42 "/>
+        <attribute name="created" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTI2OyIxMjowMzoyMSAiOzIzNzk="/>
+        <attribute name="edited" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTI2OyIwNDozNDo0MiAiOzM7MjQ5Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="count, ask, min" type="Integer" array="False" size=""/>
+            <assign variable="min" expression="0"/>
+            <assign variable="count" expression="10"/>
+            <do expression="count != 1">
+                <output expression="&quot;Proposez un autre chiffre&quot;" newline="True"/>
+                <input variable="ask"/>
+                <assign variable="count" expression="count - 1"/>
+                <if expression="ask &lt; min || count == 10">
+                    <then>
+                        <assign variable="min" expression="ask"/>
+                    </then>
+                    <else/>
+                </if>
+            </do>
+            <output expression="&quot;Le plus petit chiffre proposez est &quot; &amp; min" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

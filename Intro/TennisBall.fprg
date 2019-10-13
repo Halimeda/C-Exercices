@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="h.decock"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-18 02:49:52 "/>
+        <attribute name="created" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTE4OyIwMjowMjoyMSAiOzIzNzg="/>
+        <attribute name="edited" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTE4OyIwMjo0OTo1MiAiOzM7MjUwMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Pret, PanierVide" type="Boolean" array="False" size=""/>
+            <assign variable="Pret" expression="True"/>
+            <assign variable="PanierVide" expression="True"/>
+            <if expression="PanierVide">
+                <then>
+                    <if expression="Pret == True">
+                        <then>
+                            <output expression="&quot;La balle n'est pas lanc&#233;e, le panier est vide&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;La balle n'est pas lanc&#233;e, le panier est vide et le joueur n'est pas pr&#234;t&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="Pret == True">
+                        <then>
+                            <output expression="&quot;Lancer Balle&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;La balle n'est pas lanc&#233;e car le joueur n'est pas pr&#234;t&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

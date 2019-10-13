@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="h.decock"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-04-10 04:44:00 "/>
+        <attribute name="created" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTA0LTEwOyIwMjo1MDo0MyAiOzIzNzg="/>
+        <attribute name="edited" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTA0LTEwOyIwNDo0NDowMCAiOzI7MjQ4NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, SIZE, invert, temp" type="Integer" array="False" size=""/>
+            <assign variable="SIZE" expression="5"/>
+            <declare name="tab" type="Integer" array="True" size="SIZE"/>
+            <output expression="&quot;Random array : &quot;" newline="False"/>
+            <for variable="i" start="0" end="SIZE - 1" direction="inc" step="1">
+                <assign variable="tab[i]" expression="Random(101)"/>
+                <output expression="tab[i] &amp; &quot;  &quot;" newline="False"/>
+            </for>
+            <do expression="invert != 0">
+                <assign variable="invert" expression="0"/>
+                <for variable="i" start="0" end="SIZE - 2" direction="inc" step="1">
+                    <if expression="tab[i] &gt; tab[i+1]">
+                        <then>
+                            <assign variable="temp" expression="tab[i]"/>
+                            <assign variable="tab[i]" expression="tab[i+1]"/>
+                            <assign variable="tab[i+1]" expression="temp"/>
+                            <assign variable="invert" expression="invert + 1"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </do>
+            <output expression="&quot; &quot;" newline="True"/>
+            <output expression="&quot;Sort array : &quot;" newline="False"/>
+            <for variable="i" start="0" end="SIZE - 1" direction="inc" step="1">
+                <output expression="tab[i] &amp; &quot;  &quot;" newline="False"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

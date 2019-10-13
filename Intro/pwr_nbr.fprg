@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="h.decock"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-04-11 10:03:29 "/>
+        <attribute name="created" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTA0LTExOyIwOTo1MTo1MyAiOzIzODg="/>
+        <attribute name="edited" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTA0LTExOyIxMDowMzoyOSAiOzE7MjQ4OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="squarenbr(5)" newline="True"/>
+            <output expression="pwrnbr(2, 3)" newline="True"/>
+        </body>
+    </function>
+    <function name="pwrnbr" type="Integer" variable="result">
+        <parameters>
+            <parameter name="nb" type="Integer" array="False"/>
+            <parameter name="power" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="result, i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <assign variable="result" expression="nb"/>
+            <while expression="i &lt; power">
+                <assign variable="result" expression="nb * result"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+        </body>
+    </function>
+    <function name="squarenbr" type="Integer" variable="result">
+        <parameters>
+            <parameter name="nb" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="result" type="Integer" array="False" size=""/>
+            <assign variable="result" expression="nb * nb"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="profgame"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-25 03:11:30 "/>
+        <attribute name="created" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wMy0yNTsiMDM6MDU6NTIgIjsyNjQ1"/>
+        <attribute name="edited" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wMy0yNTsiMDM6MTE6MzAgIjsxOzI3NDY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Table, Multi, Reponse" type="Integer" array="False" size=""/>
+            <assign variable="Table" expression="1"/>
+            <while expression="Table &lt;= 9">
+                <output expression="&quot;Table de multiplication de: &quot; &amp; Table" newline="True"/>
+                <assign variable="Multi" expression="1"/>
+                <while expression="Multi &lt;= 10">
+                    <assign variable="Reponse" expression="Table * Multi"/>
+                    <output expression="Table &amp; &quot; X &quot; &amp; Multi &amp; &quot; = &quot; &amp; Reponse" newline="True"/>
+                    <assign variable="Multi" expression="Multi + 1"/>
+                </while>
+                <assign variable="Table" expression="Table + 1"/>
+                <output expression="&quot;&quot;" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

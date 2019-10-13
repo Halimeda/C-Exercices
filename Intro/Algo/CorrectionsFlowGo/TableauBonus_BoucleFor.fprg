@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="profgame"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-04-10 04:41:21 "/>
+        <attribute name="created" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wNC0xMDsiMTE6MjU6MjUgIjsyNjQx"/>
+        <attribute name="edited" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wNC0xMDsiMDQ6NDE6MjEgIjszOzI3NDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, TAILLE" type="Integer" array="False" size=""/>
+            <assign variable="TAILLE" expression="10"/>
+            <declare name="Tab" type="Integer" array="True" size="TAILLE"/>
+            <assign variable="i" expression="0"/>
+            <assign variable="Tab[i]" expression="2"/>
+            <for variable="i" start="1" end="TAILLE - 1" direction="inc" step="1">
+                <assign variable="Tab[i]" expression="Tab[i-1] * 2"/>
+            </for>
+            <for variable="i" start="0" end="TAILLE - 1" direction="inc" step="1">
+                <output expression="Tab[i] &amp; &quot; | &quot;" newline="False"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

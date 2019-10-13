@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="profgame"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-18 11:36:28 "/>
+        <attribute name="created" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wMy0xODsiMTE6Mjg6NTMgIjsyNjUy"/>
+        <attribute name="edited" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wMy0xODsiMTE6MzY6MjggIjsxOzI3NjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="TotalSec, Jour, Heure, Minute, Seconde" type="Integer" array="False" size=""/>
+            <output expression="&quot;Entrez le nombre de secondes&quot;" newline="True"/>
+            <input variable="TotalSec"/>
+            <assign variable="Seconde" expression="TotalSec % 60"/>
+            <assign variable="Minute" expression="(TotalSec / 60) % 60"/>
+            <assign variable="Heure" expression="(TotalSec / 3600) % 24"/>
+            <assign variable="Jour" expression="(TotalSec / 3600) / 24"/>
+            <output expression="&quot;Jour(s): &quot; &amp; Jour &amp; &quot; Heure(s): &quot; &amp; Heure &amp; &quot; Minute(s): &quot; &amp; Minute &amp; &quot; Seconde(s): &quot; &amp; Seconde" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

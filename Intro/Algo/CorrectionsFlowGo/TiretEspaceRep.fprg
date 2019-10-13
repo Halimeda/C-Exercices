@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Forma700"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-04-05 02:44:41 "/>
+        <attribute name="created" value="Rm9ybWE3MDA7REVTS1RPUC1LUlE0RU1GOzIwMTgtMDQtMDU7IjAyOjM5OjU3ICI7Mjk0Mg=="/>
+        <attribute name="edited" value="Rm9ybWE3MDA7REVTS1RPUC1LUlE0RU1GOzIwMTgtMDQtMDU7IjAyOjQ0OjQxICI7MTszMDM5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nbRep, nbTiret, nbEspace, cptRep, cptTiret, cptEspace" type="Integer" array="False" size=""/>
+            <assign variable="cptRep" expression="0"/>
+            <output expression="&quot;Combien de tiret?&quot;" newline="True"/>
+            <input variable="nbTiret"/>
+            <output expression="&quot;Combien d'espace?&quot;" newline="True"/>
+            <input variable="nbEspace"/>
+            <output expression="&quot;Combien de repetition?&quot;" newline="True"/>
+            <input variable="nbRep"/>
+            <while expression="cptRep &lt; nbRep">
+                <assign variable="cptTiret" expression="0"/>
+                <assign variable="cptEspace" expression="0"/>
+                <while expression="cptTiret &lt; nbTiret">
+                    <output expression="&quot;-&quot;" newline="False"/>
+                    <assign variable="cptTiret" expression="cptTiret + 1"/>
+                </while>
+                <while expression="cptEspace &lt; nbEspace">
+                    <output expression="&quot; &quot;" newline="False"/>
+                    <assign variable="cptEspace" expression="cptEspace + 1"/>
+                </while>
+                <assign variable="cptRep" expression="cptRep + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

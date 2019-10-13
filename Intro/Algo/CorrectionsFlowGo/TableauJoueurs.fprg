@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="profgame"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-04-10 02:42:16 "/>
+        <attribute name="created" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wNC0xMDsiMDI6MzM6NDYgIjsyNjQz"/>
+        <attribute name="edited" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wNC0xMDsiMDI6NDI6MTYgIjsxOzI3NDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, nbJ, moyenne" type="Integer" array="False" size=""/>
+            <assign variable="moyenne" expression="0"/>
+            <do expression="nbJ &lt; 1 || nbJ &gt; 10">
+                <output expression="&quot;Entrez le nombre de joueurs&quot;" newline="True"/>
+                <input variable="nbJ"/>
+            </do>
+            <declare name="TabJoueur" type="Integer" array="True" size="nbJ"/>
+            <for variable="i" start="0" end="nbJ - 1" direction="inc" step="1">
+                <output expression="&quot;Entrez le score du joueur &quot; &amp; i+1" newline="True"/>
+                <input variable="TabJoueur[i]"/>
+                <assign variable="moyenne" expression="moyenne + TabJoueur[i]"/>
+            </for>
+            <output expression="&quot;La moyenne est de: &quot; &amp; moyenne/nbJ" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

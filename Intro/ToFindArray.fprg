@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="h.decock"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-04-11 10:15:53 "/>
+        <attribute name="created" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTA0LTExOyIxMDowMzozMyAiOzIzNzU="/>
+        <attribute name="edited" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTA0LTExOyIxMDoxMDo1NSAiOzE7aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTA0LTEwOyIwMjo1MDo0MyAiO2J1YmJsZV9zb3J0LmZwcmc7NjYyOQ=="/>
+        <attribute name="edited" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTA0LTExOyIxMDoxNTo1MyAiOzE7MjQ4OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, SIZE" type="Integer" array="False" size=""/>
+            <assign variable="SIZE" expression="5"/>
+            <declare name="tab" type="Integer" array="True" size="SIZE"/>
+            <output expression="&quot;Random array : &quot;" newline="False"/>
+            <for variable="i" start="0" end="SIZE - 1" direction="inc" step="1">
+                <assign variable="tab[i]" expression="Random(10)"/>
+                <output expression="tab[i] &amp; &quot;  &quot;" newline="False"/>
+            </for>
+            <output expression="findArray(tab, SIZE, 5)" newline="True"/>
+        </body>
+    </function>
+    <function name="findArray" type="Integer" variable="result">
+        <parameters>
+            <parameter name="tab" type="Integer" array="True"/>
+            <parameter name="ArraySize" type="Integer" array="False"/>
+            <parameter name="ToFindValue" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="result, i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <while expression="(ToFindValue != tab[i]) &amp;&amp; (i &lt; ArraySize - 1)">
+                <assign variable="i" expression="i + 1"/>
+            </while>
+            <if expression="ToFindValue == tab[i]">
+                <then>
+                    <assign variable="result" expression="i"/>
+                </then>
+                <else>
+                    <assign variable="result" expression="-1"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

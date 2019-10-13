@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="h.decock"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-04-10 09:24:25 "/>
+        <attribute name="created" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTA0LTEwOyIwOToxMjoxMyAiOzIzODA="/>
+        <attribute name="edited" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTA0LTEwOyIwOToyNDoyNSAiOzE7MjQ5NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, SIZE" type="Integer" array="False" size=""/>
+            <assign variable="SIZE" expression="6"/>
+            <declare name="Tab" type="Integer" array="True" size="SIZE"/>
+            <assign variable="i" expression="0"/>
+            <output expression="&quot;Entrez 6 chiffres&quot;" newline="True"/>
+            <while expression="i &lt; SIZE">
+                <input variable="Tab[i]"/>
+                <output expression="Tab[i]" newline="True"/>
+                <assign variable="i" expression="i + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

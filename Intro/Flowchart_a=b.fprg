@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="h.decock"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-18 09:54:30 "/>
+        <attribute name="created" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTE4OyIwOTo0NjoxMyAiOzIzOTQ="/>
+        <attribute name="edited" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTE4OyIwOTo1NDozMCAiOzE7MjUwMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, Temp" type="Integer" array="False" size=""/>
+            <assign variable="A" expression="5"/>
+            <assign variable="B" expression="7"/>
+            <output expression="&quot;La valeur de A = &quot; &amp; A" newline="True"/>
+            <assign variable="Temp" expression="A"/>
+            <assign variable="A" expression="B"/>
+            <assign variable="B" expression="Temp"/>
+            <output expression="&quot;La valeur de A = &quot; &amp; A &amp; &quot; La valeur de B = &quot; &amp; B" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

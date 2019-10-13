@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="profgame"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-18 09:54:33 "/>
+        <attribute name="created" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wMy0xODsiMDk6MDU6NTcgIjsyNjU4"/>
+        <attribute name="edited" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wMy0xODsiMDk6NTQ6MzMgIjsxOzI3NjQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, Temp" type="Integer" array="False" size=""/>
+            <assign variable="A" expression="5"/>
+            <assign variable="B" expression="7"/>
+            <output expression="&quot;A vaut &quot; &amp; A &amp; &quot; B vaut &quot; &amp; B" newline="True"/>
+            <assign variable="Temp" expression="A"/>
+            <assign variable="A" expression="B"/>
+            <assign variable="B" expression="Temp"/>
+            <output expression="&quot;A vaut &quot; &amp; A &amp; &quot; B vaut &quot; &amp; B" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

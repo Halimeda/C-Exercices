@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="h.decock"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-18 02:32:25 "/>
+        <attribute name="created" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTE4OyIwMjoxMzoxMyAiOzIzODE="/>
+        <attribute name="edited" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTE4OyIwMjozMjoyNSAiOzI7MjQ5NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="BoisA, BoisB, BoisC, BoisD, Choice" type="Integer" array="False" size=""/>
+            <assign variable="BoisA" expression="2"/>
+            <assign variable="BoisB" expression="5"/>
+            <assign variable="BoisC" expression="0"/>
+            <assign variable="BoisD" expression="1"/>
+            <output expression="&quot;Choisissez une boisson : &quot;" newline="True"/>
+            <input variable="Choice"/>
+            <if expression="Choice == 1 &amp;&amp; BoisA &gt; 0">
+                <then>
+                    <output expression="&quot;Boisson&quot;" newline="True"/>
+                    <assign variable="BoisA" expression="BoisA - 1"/>
+                </then>
+                <else>
+                    <if expression="Choice == 2 &amp;&amp; BoisB &gt; 0">
+                        <then>
+                            <output expression="&quot;Boisson&quot;" newline="True"/>
+                            <assign variable="BoisB" expression="BoisB - 1"/>
+                        </then>
+                        <else>
+                            <if expression="Choice == 3 &amp;&amp; BoisC &gt; 0">
+                                <then>
+                                    <output expression="&quot;Boisson&quot;" newline="True"/>
+                                    <assign variable="BoisB" expression="BoisB - 1"/>
+                                </then>
+                                <else>
+                                    <if expression="Choice == 4 &amp;&amp; BoisD &gt; 0">
+                                        <then>
+                                            <output expression="&quot;Boisson&quot;" newline="True"/>
+                                            <assign variable="BoisD" expression="BoisD - 1"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Il n'y a plus cette boisson : &quot;" newline="True"/>
+                                            <call expression="Main"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

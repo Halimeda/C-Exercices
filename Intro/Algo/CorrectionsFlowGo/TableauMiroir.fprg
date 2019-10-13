@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="profgame"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-04-10 04:41:11 "/>
+        <attribute name="created" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wNC0xMDsiMDM6MDA6MTcgIjsyNjM2"/>
+        <attribute name="edited" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wNC0xMDsiMDQ6NDE6MTEgIjsxOzI3NDQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, TAILLE, temp" type="Integer" array="False" size=""/>
+            <assign variable="TAILLE" expression="5"/>
+            <declare name="Tab" type="Integer" array="True" size="TAILLE"/>
+            <output expression="&quot;Tableau avant:&quot;" newline="True"/>
+            <for variable="i" start="0" end="TAILLE-1" direction="inc" step="1">
+                <assign variable="Tab[i]" expression="Random(91)"/>
+                <output expression="Tab[i] &amp; &quot; | &quot;" newline="False"/>
+            </for>
+            <for variable="i" start="0" end="(TAILLE/2) - 1" direction="inc" step="1">
+                <assign variable="temp" expression="Tab[i]"/>
+                <assign variable="Tab[i]" expression="Tab[(TAILLE - 1) - i]"/>
+                <assign variable="Tab[(TAILLE - 1) - i]" expression="temp"/>
+            </for>
+            <output expression="&quot;&quot;" newline="True"/>
+            <output expression="&quot;Tableau apr&#232;s:&quot;" newline="True"/>
+            <for variable="i" start="0" end="TAILLE - 1" direction="inc" step="1">
+                <output expression="Tab[i] &amp; &quot; | &quot;" newline="False"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

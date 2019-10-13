@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Forma700"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-04-13 11:41:52 "/>
+        <attribute name="created" value="Rm9ybWE3MDA7REVTS1RPUC1LUlE0RU1GOzIwMTgtMDQtMTM7IjA5OjIwOjEwICI7MjkyNw=="/>
+        <attribute name="edited" value="Rm9ybWE3MDA7REVTS1RPUC1LUlE0RU1GOzIwMTgtMDQtMTM7IjExOjQxOjUyICI7MTszMDM3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="TAILLE, i, position" type="Integer" array="False" size=""/>
+            <assign variable="TAILLE" expression="10"/>
+            <assign variable="position" expression="0"/>
+            <declare name="tab" type="String" array="True" size="TAILLE"/>
+            <declare name="Saisie" type="String" array="False" size=""/>
+            <for variable="i" start="0" end="TAILLE -1" direction="inc" step="1">
+                <if expression="i == 0">
+                    <then>
+                        <assign variable="tab[i]" expression="&quot;X&quot;"/>
+                    </then>
+                    <else>
+                        <assign variable="tab[i]" expression="&quot; &quot;"/>
+                    </else>
+                </if>
+            </for>
+            <do expression="saisie != &quot;q&quot;">
+                <for variable="i" start="0" end="TAILLE - 1" direction="inc" step="1">
+                    <output expression="tab[i] &amp; &quot; | &quot;" newline="False"/>
+                </for>
+                <output expression="&quot;&quot;" newline="True"/>
+                <do expression="saisie != &quot;g&quot; &amp;&amp; saisie != &quot;d&quot; &amp;&amp; saisie != &quot;q&quot;">
+                    <output expression="&quot;Gauche: g, Droite: d, Quitter: q&quot;" newline="True"/>
+                    <input variable="saisie"/>
+                </do>
+                <if expression="saisie == &quot;g&quot;">
+                    <then>
+                        <if expression="position != 0">
+                            <then>
+                                <assign variable="tab[position]" expression="&quot; &quot;"/>
+                                <assign variable="position" expression="position - 1"/>
+                                <assign variable="tab[position]" expression="&quot;X&quot;"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else>
+                        <if expression="saisie == &quot;d&quot;">
+                            <then>
+                                <if expression="position &lt; TAILLE-1">
+                                    <then>
+                                        <assign variable="tab[position]" expression="&quot; &quot;"/>
+                                        <assign variable="position" expression="position + 1"/>
+                                        <assign variable="tab[position]" expression="&quot;X&quot;"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+            </do>
+            <output expression="&quot;Bye Bye&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,14 @@
+C:\Users\h.decock\source\repos\Exo01\Exo01\obj\Debug\Exo01.csprojAssemblyReference.cache
+C:\Users\h.decock\source\repos\Exo01\Exo01\obj\Debug\Exo01.csproj.CoreCompileInputs.cache
+C:\Users\h.decock\source\repos\Exo01\Exo01\bin\Debug\Exo01.exe.config
+C:\Users\h.decock\source\repos\Exo01\Exo01\bin\Debug\Exo01.exe
+C:\Users\h.decock\source\repos\Exo01\Exo01\bin\Debug\Exo01.pdb
+C:\Users\h.decock\source\repos\Exo01\Exo01\obj\Debug\Exo01.exe
+C:\Users\h.decock\source\repos\Exo01\Exo01\obj\Debug\Exo01.pdb
+C:\Users\h.decock\source\repos\Exercices\Exo01\bin\Debug\Exo01.exe.config
+C:\Users\h.decock\source\repos\Exercices\Exo01\bin\Debug\Exo01.exe
+C:\Users\h.decock\source\repos\Exercices\Exo01\bin\Debug\Exo01.pdb
+C:\Users\h.decock\source\repos\Exercices\Exo01\obj\Debug\Exo01.csprojAssemblyReference.cache
+C:\Users\h.decock\source\repos\Exercices\Exo01\obj\Debug\Exo01.csproj.CoreCompileInputs.cache
+C:\Users\h.decock\source\repos\Exercices\Exo01\obj\Debug\Exo01.exe
+C:\Users\h.decock\source\repos\Exercices\Exo01\obj\Debug\Exo01.pdb

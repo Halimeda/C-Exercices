@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="profgame"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-04-10 11:33:41 "/>
+        <attribute name="created" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wNC0xMDsiMTE6MjU6MjUgIjsyNjQx"/>
+        <attribute name="edited" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wNC0xMDsiMTE6MzM6NDEgIjsxOzI3NDY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, TAILLE" type="Integer" array="False" size=""/>
+            <assign variable="TAILLE" expression="10"/>
+            <declare name="Tab" type="Integer" array="True" size="TAILLE"/>
+            <assign variable="i" expression="0"/>
+            <assign variable="Tab[i]" expression="2"/>
+            <assign variable="i" expression="i + 1"/>
+            <while expression="i &lt; TAILLE">
+                <assign variable="Tab[i]" expression="Tab[i - 1] * 2"/>
+                <assign variable="i" expression="i + 1"/>
+            </while>
+            <assign variable="i" expression="0"/>
+            <while expression="i &lt; TAILLE">
+                <output expression="Tab[i] &amp; &quot; | &quot;" newline="False"/>
+                <assign variable="i" expression="i + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

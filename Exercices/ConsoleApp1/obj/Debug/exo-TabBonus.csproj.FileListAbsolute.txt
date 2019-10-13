@@ -1,0 +1,6 @@
+C:\Users\h.decock\source\repos\Exercices\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\h.decock\source\repos\Exercices\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\h.decock\source\repos\Exercices\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\h.decock\source\repos\Exercices\ConsoleApp1\obj\Debug\exo-TabBonus.csproj.CoreCompileInputs.cache
+C:\Users\h.decock\source\repos\Exercices\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\h.decock\source\repos\Exercices\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

@@ -1,0 +1,7 @@
+C:\Users\h.decock\OneDrive - Interface3\C#\CSharpOO\CSharp_orienteObjet_Exo\CSharp_orienteObjet_Exo\bin\Debug\CSharp_orienteObjet_Exo.exe.config
+C:\Users\h.decock\OneDrive - Interface3\C#\CSharpOO\CSharp_orienteObjet_Exo\CSharp_orienteObjet_Exo\bin\Debug\CSharp_orienteObjet_Exo.exe
+C:\Users\h.decock\OneDrive - Interface3\C#\CSharpOO\CSharp_orienteObjet_Exo\CSharp_orienteObjet_Exo\bin\Debug\CSharp_orienteObjet_Exo.pdb
+C:\Users\h.decock\OneDrive - Interface3\C#\CSharpOO\CSharp_orienteObjet_Exo\CSharp_orienteObjet_Exo\obj\Debug\CSharp_orienteObjet_Exo.csprojAssemblyReference.cache
+C:\Users\h.decock\OneDrive - Interface3\C#\CSharpOO\CSharp_orienteObjet_Exo\CSharp_orienteObjet_Exo\obj\Debug\CSharp_orienteObjet_Exo.csproj.CoreCompileInputs.cache
+C:\Users\h.decock\OneDrive - Interface3\C#\CSharpOO\CSharp_orienteObjet_Exo\CSharp_orienteObjet_Exo\obj\Debug\CSharp_orienteObjet_Exo.exe
+C:\Users\h.decock\OneDrive - Interface3\C#\CSharpOO\CSharp_orienteObjet_Exo\CSharp_orienteObjet_Exo\obj\Debug\CSharp_orienteObjet_Exo.pdb

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="profgame"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-25 11:14:05 "/>
+        <attribute name="created" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wMy0yNTsiMTA6NTc6NTggIjsyNjU2"/>
+        <attribute name="edited" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wMy0yNTsiMTE6MDg6MTQgIjsxO3Byb2ZnYW1lO0lCVElTU0FNOzIwMTktMDMtMTg7IjExOjI4OjUzICI7Q29udmVydGlzc2V1clNlY29uZGVzLmZwcmc7ODIyNA=="/>
+        <attribute name="edited" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wMy0yNTsiMTE6MTQ6MDUgIjs0OzI3NTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="J1, H1, M1, S1, Duree1" type="Integer" array="False" size=""/>
+            <declare name="J2, H2, M2, S2, Duree2" type="Integer" array="False" size=""/>
+            <declare name="TotalS" type="Integer" array="False" size=""/>
+            <output expression="&quot;Entrez jour1, heure1, minute1, seconde1&quot;" newline="True"/>
+            <input variable="J1"/>
+            <input variable="H1"/>
+            <input variable="M1"/>
+            <input variable="S1"/>
+            <output expression="&quot;Entrez jour2, heure2, minute2, seconde2&quot;" newline="True"/>
+            <input variable="J2"/>
+            <input variable="H2"/>
+            <input variable="M2"/>
+            <input variable="S2"/>
+            <assign variable="Duree1" expression="(J1 * 24 * 3600) + (H1 * 3600) + (M1 * 60) + S1"/>
+            <assign variable="Duree2" expression="(J2 * 24 * 3600)+ (H2 * 3600) + (M2 * 60) + S2"/>
+            <if expression="Duree1 &gt; Duree2">
+                <then>
+                    <assign variable="TotalS" expression="Duree1 - Duree2"/>
+                </then>
+                <else>
+                    <assign variable="TotalS" expression="Duree2 - Duree1"/>
+                </else>
+            </if>
+            <declare name="Jour, Heure, Minute, Seconde" type="Integer" array="False" size=""/>
+            <assign variable="Seconde" expression="TotalS % 60"/>
+            <assign variable="Minute" expression="(TotalS / 60) % 60"/>
+            <assign variable="Heure" expression="(TotalS / 3600) % 24"/>
+            <assign variable="Jour" expression="(TotalS / 3600) / 24"/>
+            <output expression="&quot;Jour(s): &quot; &amp; Jour &amp; &quot; Heure(s): &quot; &amp; Heure &amp; &quot; Minute(s): &quot; &amp; Minute &amp; &quot; Seconde(s): &quot; &amp; Seconde" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

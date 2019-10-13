@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="h.decock"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-26 04:34:47 "/>
+        <attribute name="created" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTI2OyIxMjoxNTo0OSAiOzIzOTI="/>
+        <attribute name="edited" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTI2OyIwNDozNDo0NyAiOzM7MjUwMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nbRep, nbTiret, nbEspace, ctRep, ctTir, ctEsp" type="Integer" array="False" size=""/>
+            <output expression="&quot;Porposez un nombre de r&#233;petition&quot;" newline="True"/>
+            <input variable="nbRep"/>
+            <assign variable="ctRep" expression="nbRep"/>
+            <output expression="&quot;Porposez un nombre de tiret&quot;" newline="True"/>
+            <input variable="nbTiret"/>
+            <assign variable="ctTir" expression="nbTiret"/>
+            <output expression="&quot;Porposez un nombre d'espace&quot;" newline="True"/>
+            <input variable="nbEspace"/>
+            <assign variable="ctEsp" expression="nbEspace"/>
+            <while expression="ctRep &gt; 0">
+                <while expression="ctTir &gt;= 0">
+                    <output expression="&quot;-&quot;" newline="False"/>
+                    <assign variable="ctTir" expression="ctTir - 1"/>
+                </while>
+                <assign variable="ctTir" expression="nbTiret"/>
+                <while expression="ctEsp &gt;= 0">
+                    <output expression="&quot; &quot;" newline="False"/>
+                    <assign variable="ctEsp" expression="ctEsp - 1"/>
+                </while>
+                <assign variable="ctEsp" expression="nbEspace"/>
+                <assign variable="ctRep" expression="ctRep - 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

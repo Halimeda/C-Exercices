@@ -1,0 +1,14 @@
+C:\Users\h.decock\OneDrive - Interface3\C#\CSharpOO\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\h.decock\OneDrive - Interface3\C#\CSharpOO\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\h.decock\OneDrive - Interface3\C#\CSharpOO\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\h.decock\OneDrive - Interface3\C#\CSharpOO\ConsoleApp1\ConsoleApp1\obj\Debug\Exo_Objet.csprojAssemblyReference.cache
+C:\Users\h.decock\OneDrive - Interface3\C#\CSharpOO\ConsoleApp1\ConsoleApp1\obj\Debug\Exo_Objet.csproj.CoreCompileInputs.cache
+C:\Users\h.decock\OneDrive - Interface3\C#\CSharpOO\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\h.decock\OneDrive - Interface3\C#\CSharpOO\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+C:\Users\h.decock\OneDrive - Interface3\C#\CSharpOO\ExoObjet\ExoObjet\obj\Debug\Exo_Objet.csprojAssemblyReference.cache
+C:\Users\h.decock\OneDrive - Interface3\C#\CSharpOO\ExoObjet\ExoObjet\obj\Debug\Exo_Objet.csproj.CoreCompileInputs.cache
+C:\Users\h.decock\OneDrive - Interface3\C#\CSharpOO\ExoObjet\ExoObjet\obj\Debug\ConsoleApp1.exe
+C:\Users\h.decock\OneDrive - Interface3\C#\CSharpOO\ExoObjet\ExoObjet\obj\Debug\ConsoleApp1.pdb
+C:\Users\h.decock\OneDrive - Interface3\C#\CSharpOO\ExoObjet\ExoObjet\bin\Debug\ConsoleApp1.exe.config
+C:\Users\h.decock\OneDrive - Interface3\C#\CSharpOO\ExoObjet\ExoObjet\bin\Debug\ConsoleApp1.exe
+C:\Users\h.decock\OneDrive - Interface3\C#\CSharpOO\ExoObjet\ExoObjet\bin\Debug\ConsoleApp1.pdb

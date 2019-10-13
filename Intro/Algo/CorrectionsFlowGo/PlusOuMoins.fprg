@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="profgame"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-26 02:53:03 "/>
+        <attribute name="created" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wMy0yNjsiMDE6NDc6MjMgIjsyNjQ4"/>
+        <attribute name="edited" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wMy0yNjsiMDI6NTM6MDMgIjsyOzI3NTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Nbr, Tentative, Saisie" type="Integer" array="False" size=""/>
+            <assign variable="Nbr" expression="Random(101)"/>
+            <assign variable="Tentative" expression="0"/>
+            <do expression="Saisie != Nbr">
+                <assign variable="Tentative" expression="Tentative + 1"/>
+                <output expression="&quot;Entrez un nombre&quot;" newline="True"/>
+                <input variable="Saisie"/>
+                <if expression="Saisie &lt; Nbr">
+                    <then>
+                        <output expression="&quot;C'est plus&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="Saisie &gt; Nbr">
+                            <then>
+                                <output expression="&quot;C'est moins&quot;" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+            </do>
+            <output expression="&quot;Bravo!!! Vous avez trouv&#233; en &quot; &amp; Tentative &amp; &quot; tentative(s)&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

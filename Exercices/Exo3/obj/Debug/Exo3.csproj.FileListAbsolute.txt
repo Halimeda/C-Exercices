@@ -1,0 +1,7 @@
+C:\Users\h.decock\source\repos\Exercices\Exo3\bin\Debug\Exo3.exe.config
+C:\Users\h.decock\source\repos\Exercices\Exo3\bin\Debug\Exo3.exe
+C:\Users\h.decock\source\repos\Exercices\Exo3\bin\Debug\Exo3.pdb
+C:\Users\h.decock\source\repos\Exercices\Exo3\obj\Debug\Exo3.csprojAssemblyReference.cache
+C:\Users\h.decock\source\repos\Exercices\Exo3\obj\Debug\Exo3.csproj.CoreCompileInputs.cache
+C:\Users\h.decock\source\repos\Exercices\Exo3\obj\Debug\Exo3.exe
+C:\Users\h.decock\source\repos\Exercices\Exo3\obj\Debug\Exo3.pdb

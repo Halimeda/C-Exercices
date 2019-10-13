@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="h.decock"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-04-10 09:33:14 "/>
+        <attribute name="created" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTA0LTEwOyIwOToyNDozMCAiOzIzODI="/>
+        <attribute name="edited" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTA0LTEwOyIwOTozMzoxNCAiOzE7MjQ5Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, SIZE" type="Integer" array="False" size=""/>
+            <assign variable="SIZE" expression="10"/>
+            <assign variable="i" expression="0"/>
+            <declare name="tab" type="Integer" array="True" size="SIZE"/>
+            <assign variable="tab[i]" expression="2"/>
+            <while expression="i &lt; SIZE">
+                <output expression="tab[i]" newline="True"/>
+                <assign variable="i" expression="i + 1"/>
+                <if expression="i &lt; SIZE">
+                    <then>
+                        <assign variable="tab[i]" expression="tab[i - 1] * 2"/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

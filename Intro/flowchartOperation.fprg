@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="h.decock"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-18 10:46:12 "/>
+        <attribute name="created" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTE4OyIxMDowNjowMyAiOzIzODE="/>
+        <attribute name="edited" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTE4OyIxMDo0NjoxMiAiOzE7MjQ5Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, C, D, E" type="Integer" array="False" size=""/>
+            <assign variable="A" expression="8 % 3"/>
+            <output expression="&quot; A = &quot; &amp; A" newline="True"/>
+            <assign variable="B" expression="4 + A"/>
+            <output expression="&quot; A = &quot; &amp; A &amp; &quot; B = &quot; &amp; B" newline="True"/>
+            <assign variable="C" expression="B * A"/>
+            <output expression="&quot; A = &quot; &amp; A &amp; &quot; B = &quot; &amp; B &amp; &quot; C = &quot; &amp; C" newline="True"/>
+            <assign variable="D" expression="(C - A) * B"/>
+            <output expression="&quot; A = &quot; &amp; A &amp; &quot; B = &quot; &amp; B &amp; &quot; C = &quot; &amp; C &amp; &quot; D = &quot; &amp; D" newline="True"/>
+            <assign variable="E" expression="((A +7) *( D/A)) * 0"/>
+            <output expression="&quot; A = &quot; &amp; A &amp; &quot; B = &quot; &amp; B &amp; &quot; C = &quot; &amp; C &amp; &quot; D = &quot; &amp; D &amp; &quot; E = &quot; &amp; E" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

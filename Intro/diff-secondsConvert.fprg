@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="h.decock"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-25 09:35:41 "/>
+        <attribute name="created" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTI1OyIwOTowODowMyAiOzIzODk="/>
+        <attribute name="edited" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTI1OyIwOTowODoxMCAiOzE7aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTE4OyIxMDo0NjoxNCAiO2NvbnZlcnRpb25TZWMtSm91ci5mcHJnOzczMTY="/>
+        <attribute name="edited" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTAzLTI1OyIwOTozNTo0MSAiOzE7MjQ5OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="day1, day2, days, hour1, hour2, hours, min1, min2, minutes, sec1, sec2, seconds" type="Integer" array="False" size=""/>
+            <output expression="&quot;Entrez un nombre de secondes : &quot;" newline="True"/>
+            <input variable="sec1"/>
+            <output expression="&quot;Entrez un nombre de secondes : &quot;" newline="True"/>
+            <input variable="sec2"/>
+            <assign variable="day1" expression="sec1 / 86400"/>
+            <assign variable="day2" expression="sec2 / 86400"/>
+            <if expression="day2 &lt; day1">
+                <then>
+                    <assign variable="days" expression="(day1 - day2)"/>
+                </then>
+                <else>
+                    <assign variable="days" expression="(day2 - day1)"/>
+                </else>
+            </if>
+            <assign variable="sec1" expression="sec1 % 86400"/>
+            <assign variable="sec2" expression="sec2 % 86400"/>
+            <assign variable="hour1" expression="sec1 / 3600"/>
+            <assign variable="hour2" expression="sec2 / 3600"/>
+            <if expression="hour2 &lt; hour1">
+                <then>
+                    <assign variable="hours" expression="hour1 - hour2"/>
+                </then>
+                <else>
+                    <assign variable="hours" expression="hour2 - hour1"/>
+                </else>
+            </if>
+            <assign variable="sec1" expression="sec1 % 3600"/>
+            <assign variable="sec2" expression="sec2 % 3600"/>
+            <assign variable="min1" expression="sec1 / 60"/>
+            <assign variable="min2" expression="sec2 / 60"/>
+            <if expression="min2 &lt; min1">
+                <then>
+                    <assign variable="minutes" expression="min1 - min2"/>
+                </then>
+                <else>
+                    <assign variable="minutes" expression="min2 - min1"/>
+                </else>
+            </if>
+            <assign variable="sec1" expression="sec1 % 60"/>
+            <assign variable="sec2" expression="sec2 % 60"/>
+            <if expression="sec2 &lt; sec1">
+                <then>
+                    <assign variable="seconds" expression="sec1 - sec2"/>
+                </then>
+                <else>
+                    <assign variable="seconds" expression="sec2 - sec1"/>
+                </else>
+            </if>
+            <output expression="&quot;Cela correspond a une diff&#233;rence de : &quot; &amp; days &amp; &quot; jours &quot; &amp; hours &amp; &quot; heures &quot; &amp; minutes &amp; &quot; minutes &quot; &amp; seconds &amp; &quot; secondes&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,7 @@
+C:\Users\h.decock\source\repos\exampleCSharp\exampleCSharp\obj\Debug\exampleCSharp.csprojAssemblyReference.cache
+C:\Users\h.decock\source\repos\exampleCSharp\exampleCSharp\obj\Debug\exampleCSharp.csproj.CoreCompileInputs.cache
+C:\Users\h.decock\source\repos\exampleCSharp\exampleCSharp\bin\Debug\exampleCSharp.exe.config
+C:\Users\h.decock\source\repos\exampleCSharp\exampleCSharp\bin\Debug\exampleCSharp.exe
+C:\Users\h.decock\source\repos\exampleCSharp\exampleCSharp\bin\Debug\exampleCSharp.pdb
+C:\Users\h.decock\source\repos\exampleCSharp\exampleCSharp\obj\Debug\exampleCSharp.exe
+C:\Users\h.decock\source\repos\exampleCSharp\exampleCSharp\obj\Debug\exampleCSharp.pdb

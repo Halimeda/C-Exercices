@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="h.decock"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-04-11 04:45:11 "/>
+        <attribute name="created" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTA0LTExOyIxMDo0MToyMSAiOzIzNzQ="/>
+        <attribute name="edited" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTA0LTExOyIxMTo0MTozOCAiOzM7aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTA0LTEwOyIwMjo1MDo0MyAiO2J1YmJsZV9zb3J0LmZwcmc7NjYzNw=="/>
+        <attribute name="edited" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTA0LTExOyIwNDo0NToxMSAiOzE7MjQ4OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="SIZES, SIZEM, nothing" type="Integer" array="False" size=""/>
+            <declare name="Eplucheur" type="String" array="False" size=""/>
+            <assign variable="SIZES" expression="3"/>
+            <assign variable="SIZEM" expression="7"/>
+            <assign variable="Eplucheur" expression="&quot;_&quot;"/>
+            <declare name="Seau" type="String" array="True" size="SIZES"/>
+            <call expression="InitRecipient(Seau, SIZES)"/>
+            <declare name="Marmite" type="String" array="True" size="SIZEM"/>
+            <call expression="InitRecipient(Marmite, SIZEM)"/>
+            <do expression="!EstPlein(Marmite, SIZEM)">
+                <if expression="EstPlein(Seau, SIZES) != True">
+                    <then>
+                        <call expression="RemplirSeau(Seau, SIZES)"/>
+                    </then>
+                    <else>
+                        <if expression="Eplucheur == &quot;_&quot;">
+                            <then>
+                                <assign variable="Eplucheur" expression="Prendre(Seau, SIZES)"/>
+                            </then>
+                            <else>
+                                <if expression="Eplucheur == &quot;o&quot;">
+                                    <then>
+                                        <assign variable="Eplucheur" expression="Eplucher()"/>
+                                    </then>
+                                    <else>
+                                        <if expression="Eplucheur == &quot;0&quot;">
+                                            <then>
+                                                <assign variable="Eplucheur" expression="Deposer(Marmite, SIZEM)"/>
+                                            </then>
+                                            <else/>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <call expression="Display(Seau, SIZES, Marmite, SIZEM, Eplucheur)"/>
+                <input variable="nothing"/>
+            </do>
+        </body>
+    </function>
+    <function name="AffichageTab" type="None" variable="">
+        <parameters>
+            <parameter name="tab" type="String" array="True"/>
+            <parameter name="ArraySize" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="ArraySize - 1" direction="inc" step="1">
+                <output expression="&quot; \_ &quot; &amp; tab[i] &amp; &quot; _/ &quot;" newline="False"/>
+            </for>
+        </body>
+    </function>
+    <function name="Deposer" type="String" variable="Result">
+        <parameters>
+            <parameter name="tab" type="String" array="True"/>
+            <parameter name="ArraySize" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="EstPos&#233;" type="Boolean" array="False" size=""/>
+            <declare name="Result" type="String" array="False" size=""/>
+            <assign variable="EstPos&#233;" expression="false"/>
+            <assign variable="i" expression="0"/>
+            <while expression="(i &lt; ArraySize) &amp;&amp; !EstPos&#233;">
+                <if expression="tab[i] == &quot;_&quot;">
+                    <then>
+                        <assign variable="Result" expression="tab[i]"/>
+                        <assign variable="tab[i]" expression="&quot;0&quot;"/>
+                        <assign variable="EstPos&#233;" expression="true"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="i" expression="i + 1"/>
+            </while>
+        </body>
+    </function>
+    <function name="Display" type="None" variable="">
+        <parameters>
+            <parameter name="tab1" type="String" array="True"/>
+            <parameter name="ArraySize1" type="Integer" array="False"/>
+            <parameter name="tab2" type="String" array="True"/>
+            <parameter name="ArraySize2" type="Integer" array="False"/>
+            <parameter name="Epl" type="String" array="False"/>
+        </parameters>
+        <body>
+            <output expression="&quot;&quot;" newline="True"/>
+            <output expression="&quot;________Seau________&quot;" newline="True"/>
+            <call expression="AffichageTab(tab1, ArraySize1)"/>
+            <output expression="&quot; &quot;" newline="True"/>
+            <output expression="&quot;________Eplucheur________&quot;" newline="True"/>
+            <output expression="&quot;-&gt; &quot; &amp; Epl &amp; &quot; &lt;-&quot;" newline="True"/>
+            <output expression="&quot;________Marmite________&quot;" newline="True"/>
+            <call expression="AffichageTab(tab2, ArraySize2)"/>
+        </body>
+    </function>
+    <function name="Eplucher" type="String" variable="Result">
+        <parameters/>
+        <body>
+            <declare name="Result" type="String" array="False" size=""/>
+            <assign variable="Result" expression="&quot;0&quot;"/>
+        </body>
+    </function>
+    <function name="EstPlein" type="Boolean" variable="Result">
+        <parameters>
+            <parameter name="tab" type="String" array="True"/>
+            <parameter name="ArraySize" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="Result" type="Boolean" array="False" size=""/>
+            <if expression="tab[ArraySize - 1] != &quot;_&quot;">
+                <then>
+                    <assign variable="Result" expression="true"/>
+                </then>
+                <else>
+                    <assign variable="Result" expression="false"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="InitRecipient" type="None" variable="return">
+        <parameters>
+            <parameter name="tab" type="String" array="True"/>
+            <parameter name="ArraySize" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="ArraySize - 1" direction="inc" step="1">
+                <assign variable="tab[i]" expression="&quot;_&quot;"/>
+            </for>
+        </body>
+    </function>
+    <function name="Prendre" type="String" variable="Result">
+        <parameters>
+            <parameter name="tab" type="String" array="True"/>
+            <parameter name="ArraySize" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="EstPrit" type="Boolean" array="False" size=""/>
+            <declare name="Result" type="String" array="False" size=""/>
+            <assign variable="EstPrit" expression="false"/>
+            <assign variable="i" expression="0"/>
+            <while expression="(i &lt; ArraySize) &amp;&amp; !EstPrit">
+                <if expression="tab[i] == &quot;o&quot;">
+                    <then>
+                        <assign variable="Result" expression="tab[i]"/>
+                        <assign variable="tab[i]" expression="&quot;_&quot;"/>
+                        <assign variable="EstPrit" expression="true"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="i" expression="i + 1"/>
+            </while>
+        </body>
+    </function>
+    <function name="RemplirSeau" type="None" variable="">
+        <parameters>
+            <parameter name="tab" type="String" array="True"/>
+            <parameter name="ArraySize" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="ArraySize - 1" direction="inc" step="1">
+                <assign variable="tab[i]" expression="&quot;o&quot;"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

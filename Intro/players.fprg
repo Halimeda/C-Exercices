@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="h.decock"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-04-10 02:33:24 "/>
+        <attribute name="created" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTA0LTEwOyIxMjowNzoxOCAiOzIzODM="/>
+        <attribute name="edited" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTA0LTEwOyIwMjozMzoyNCAiOzI7MjQ4Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="SIZE, i" type="Integer" array="False" size=""/>
+            <declare name="moy" type="Real" array="False" size=""/>
+            <assign variable="moy" expression="0"/>
+            <do expression="SIZE &gt; 10 || SIZE &lt; 1">
+                <output expression="&quot;Entrez un nombre de joueur : &quot;" newline="True"/>
+                <input variable="SIZE"/>
+            </do>
+            <declare name="tab" type="Integer" array="True" size="SIZE"/>
+            <for variable="i" start="0" end="SIZE - 1" direction="inc" step="1">
+                <output expression="&quot;Entrez les scores du joueur &quot; &amp; i+1 &amp; &quot; : &quot;" newline="True"/>
+                <input variable="tab[i]"/>
+                <assign variable="moy" expression="tab[i] + moy"/>
+            </for>
+            <output expression="&quot;La moyenne des scores est &#233;gal &#224; : &quot; &amp; moy / SIZE" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

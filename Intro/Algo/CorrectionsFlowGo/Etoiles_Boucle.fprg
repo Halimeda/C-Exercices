@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="profgame"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-26 01:44:10 "/>
+        <attribute name="created" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wMy0yNjsiMDE6Mzk6NTQgIjsyNjUz"/>
+        <attribute name="edited" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wMy0yNjsiMDE6NDQ6MTAgIjsxOzI3NDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Saisie, CptLigne, CptEtoile" type="Integer" array="False" size=""/>
+            <output expression="&quot;Entrez le nombre de lignes&quot;" newline="True"/>
+            <input variable="Saisie"/>
+            <assign variable="CptLigne" expression="1"/>
+            <while expression="CptLigne &lt;= Saisie">
+                <assign variable="CptEtoile" expression="1"/>
+                <while expression="CptEtoile &lt;= CptLigne">
+                    <output expression="&quot;*&quot;" newline="False"/>
+                    <assign variable="CptEtoile" expression="CptEtoile + 1"/>
+                </while>
+                <output expression="&quot;&quot;" newline="True"/>
+                <assign variable="CptLigne" expression="CptLigne + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="h.decock"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-04-10 04:44:04 "/>
+        <attribute name="created" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTA0LTEwOyIwMToyOToxOCAiOzIzODU="/>
+        <attribute name="edited" value="aC5kZWNvY2s7R0FNRS0wMjsyMDE5LTA0LTEwOyIwNDo0NDowNCAiOzI7MjQ4OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, SIZE, temp, min" type="Integer" array="False" size=""/>
+            <assign variable="SIZE" expression="6"/>
+            <assign variable="min" expression="1"/>
+            <declare name="tab" type="Integer" array="True" size="SIZE"/>
+            <output expression="&quot;Array : &quot;" newline="False"/>
+            <for variable="i" start="0" end="SIZE-1" direction="inc" step="1">
+                <assign variable="tab[i]" expression="i"/>
+                <output expression="tab[i]" newline="False"/>
+            </for>
+            <for variable="i" start="0" end="(SIZE-1)/2" direction="inc" step="1">
+                <assign variable="temp" expression="tab[i]"/>
+                <assign variable="tab[i]" expression="tab[SIZE - min]"/>
+                <assign variable="tab[SIZE - min]" expression="temp"/>
+                <assign variable="min" expression="min + 1"/>
+            </for>
+            <output expression="&quot; &quot;" newline="True"/>
+            <output expression="&quot;Array reverse : &quot;" newline="False"/>
+            <for variable="i" start="0" end="SIZE-1" direction="inc" step="1">
+                <output expression="tab[i]" newline="False"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

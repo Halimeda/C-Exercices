@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="profgame"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-18 12:19:55 "/>
+        <attribute name="created" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wMy0xODsiMTE6NTU6MjAgIjsyNjQ2"/>
+        <attribute name="edited" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wMy0xODsiMTI6MTk6NTUgIjsxOzI3NjM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, E" type="Integer" array="False" size=""/>
+            <declare name="C, D" type="Boolean" array="False" size=""/>
+            <breakpoint/>
+            <assign variable="A" expression="3"/>
+            <assign variable="B" expression="9"/>
+            <assign variable="E" expression="9"/>
+            <assign variable="C" expression="false"/>
+            <assign variable="D" expression="!C"/>
+            <breakpoint/>
+            <output expression="(A &gt; 8)" newline="True"/>
+            <output expression="(B = 9)" newline="True"/>
+            <output expression="!(A != 3)" newline="True"/>
+            <output expression="!(C)" newline="True"/>
+            <output expression="(A &lt; B) || C" newline="True"/>
+            <output expression="!((A + B) != 12)" newline="True"/>
+            <output expression="((B = 5) || ( (E &gt; 10) &amp;&amp; (A &lt; 8) ))" newline="True"/>
+            <output expression="(((B = 5) || ((E &gt; 10) &amp;&amp; (A &lt; 8))) || (A &lt; B) || C) &amp;&amp; C" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

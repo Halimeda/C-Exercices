@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="BStorm-Jessica"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-04-11 04:45:25 "/>
+        <attribute name="created" value="QlN0b3JtLUplc3NpY2E7REVTS1RPUC1DOE9SUTFGOzIwMTgtMDQtMTI7IjExOjAyOjIzICI7MzU5OQ=="/>
+        <attribute name="edited" value="QlN0b3JtLUplc3NpY2E7REVTS1RPUC1DOE9SUTFGOzIwMTgtMDQtMTI7IjAxOjAwOjE3ICI7MTszNzA3"/>
+        <attribute name="edited" value="cHJvZmdhbWU7SUJUSVNTQU07MjAxOS0wNC0xMTsiMDQ6NDU6MjUgIjsyOzI3NTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="TAILLES, TAILLEM" type="Integer" array="False" size=""/>
+            <assign variable="TAILLES" expression="5"/>
+            <assign variable="TAILLEM" expression="10"/>
+            <declare name="eplucheur, rien" type="String" array="False" size=""/>
+            <declare name="Seau" type="String" array="True" size="TAILLES"/>
+            <declare name="Marmite" type="String" array="True" size="TAILLEM"/>
+            <assign variable="eplucheur" expression="&quot;_&quot;"/>
+            <call expression="InitRecipient(Seau, TAILLES)"/>
+            <call expression="InitRecipient(Marmite,TAILLEM)"/>
+            <while expression="!EstPlein(Marmite, TAILLEM)">
+                <if expression="!EstPlein(Seau,TAILLES)">
+                    <then>
+                        <call expression="RemplirSceau(Seau,TAILLES)"/>
+                    </then>
+                    <else>
+                        <if expression="eplucheur == &quot;_&quot;">
+                            <then>
+                                <assign variable="eplucheur" expression="PrendrePatate(Seau, TAILLES)"/>
+                            </then>
+                            <else>
+                                <if expression="eplucheur == &quot;o&quot;">
+                                    <then>
+                                        <assign variable="eplucheur" expression="Eplucher()"/>
+                                    </then>
+                                    <else>
+                                        <if expression="eplucheur == &quot;0&quot;">
+                                            <then>
+                                                <call expression="DeposerPatate(Marmite, TAILLEM)"/>
+                                                <assign variable="eplucheur" expression="&quot;_&quot;"/>
+                                            </then>
+                                            <else/>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <call expression="AffichageGeneral(Seau, TAILLES,eplucheur,Marmite,TAILLEM)"/>
+                <input variable="rien"/>
+            </while>
+            <output expression="&quot;La marmite est pleine&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="Affichage" type="None" variable="">
+        <parameters>
+            <parameter name="tab" type="String" array="True"/>
+            <parameter name="taille" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="taille-1" direction="inc" step="1">
+                <output expression="&quot; \_&quot; &amp; tab[i] &amp; &quot;_/&quot;" newline="False"/>
+            </for>
+            <output expression="&quot;&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="AffichageGeneral" type="None" variable="">
+        <parameters>
+            <parameter name="tab" type="String" array="True"/>
+            <parameter name="taille" type="Integer" array="False"/>
+            <parameter name="eplucheur" type="String" array="False"/>
+            <parameter name="marmite" type="String" array="True"/>
+            <parameter name="tailleM" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <output expression="&quot;======== SEAU==========&quot;" newline="True"/>
+            <call expression="Affichage(tab, taille)"/>
+            <output expression="&quot;&quot;" newline="True"/>
+            <output expression="&quot;======== EPLUCHEUR ==========&quot;" newline="True"/>
+            <output expression="&quot;-&gt;&quot; &amp; eplucheur &amp; &quot;&lt;-&quot;" newline="True"/>
+            <output expression="&quot;&quot;" newline="True"/>
+            <output expression="&quot;======== MARMITE ==========&quot;" newline="True"/>
+            <call expression="Affichage(marmite, tailleM)"/>
+            <output expression="&quot;&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="DeposerPatate" type="None" variable="">
+        <parameters>
+            <parameter name="tab" type="String" array="True"/>
+            <parameter name="taille" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="estDeposer" type="Boolean" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="estDeposer" expression="false"/>
+            <assign variable="i" expression="0"/>
+            <while expression="i &lt;= taille-1 &amp;&amp; !estDeposer">
+                <if expression="tab[i] == &quot;_&quot;">
+                    <then>
+                        <assign variable="tab[i]" expression="&quot;0&quot;"/>
+                        <assign variable="estDeposer" expression="true"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="i" expression="i + 1"/>
+            </while>
+        </body>
+    </function>
+    <function name="Eplucher" type="String" variable="patate">
+        <parameters/>
+        <body>
+            <declare name="patate" type="String" array="False" size=""/>
+            <assign variable="patate" expression="&quot;0&quot;"/>
+        </body>
+    </function>
+    <function name="EstPlein" type="Boolean" variable="plein">
+        <parameters>
+            <parameter name="tab" type="String" array="True"/>
+            <parameter name="taille" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="plein" type="Boolean" array="False" size=""/>
+            <if expression="tab[taille-1] == &quot;_&quot;">
+                <then>
+                    <assign variable="plein" expression="false"/>
+                </then>
+                <else>
+                    <assign variable="plein" expression="true"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="InitRecipient" type="None" variable="">
+        <parameters>
+            <parameter name="tab" type="String" array="True"/>
+            <parameter name="taille" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="taille-1" direction="inc" step="1">
+                <assign variable="tab[i]" expression="&quot;_&quot;"/>
+            </for>
+        </body>
+    </function>
+    <function name="PrendrePatate" type="String" variable="patate">
+        <parameters>
+            <parameter name="tab" type="String" array="True"/>
+            <parameter name="taille" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="patate" type="String" array="False" size=""/>
+            <assign variable="patate" expression="&quot;&quot;"/>
+            <declare name="estPrit" type="Boolean" array="False" size=""/>
+            <assign variable="estPrit" expression="false"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <while expression="i &lt; taille &amp;&amp; !estPrit">
+                <if expression="tab[i] == &quot;o&quot;">
+                    <then>
+                        <assign variable="patate" expression="tab[i]"/>
+                        <assign variable="tab[i]" expression="&quot;_&quot;"/>
+                        <assign variable="estPrit" expression="true"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="i" expression="i + 1"/>
+            </while>
+        </body>
+    </function>
+    <function name="RemplirSceau" type="None" variable="">
+        <parameters>
+            <parameter name="tab" type="String" array="True"/>
+            <parameter name="taille" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="taille-1" direction="inc" step="1">
+                <assign variable="tab[i]" expression="&quot;o&quot;"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
